@@ -4,7 +4,7 @@ import { assets } from "../assets/assets";
 import { NavLink, useNavigate } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 
-const ADMIN_URL = "https://quick-consult-rgju.vercel.app";
+const ADMIN_URL = "https://quick-consult-rgju.vercel.app/";
 
 const Navbar = () => {
   const navigate = useNavigate();

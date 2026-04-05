@@ -4,7 +4,7 @@ import { assets } from "../assets/assets";
 import { NavLink, useNavigate } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 
-const ADMIN_URL = "https://quickconsult-admin.vercel.app";
+const ADMIN_URL = "https://quick-consult-rgju.vercel.app/";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -46,11 +46,11 @@ const Navbar = () => {
       <div className="flex items-center gap-4">
         {/* Admin Button - Desktop */}
         <button
-          onClick={goToAdmin}
-          className="hidden md:block border border-primary text-primary px-5 py-2 rounded-full font-medium hover:bg-primary hover:text-white transition-all duration-300"
-        >
-          Admin
-        </button>
+  onClick={() => window.open(ADMIN_URL, "_blank")}
+  className="hidden md:block border border-primary text-primary px-5 py-2 rounded-full font-medium hover:bg-primary hover:text-white transition-all duration-300"
+>
+  Admin
+</button>
 
         {token && userData ? (
           <div className="flex items-center gap-2 cursor-pointer group relative">

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 🏥 Smart Medical Consultation Scheduler
 
 A smart full-stack web application designed to manage medical consultations efficiently.
@@ -117,3 +118,6 @@ Smart-Medical-Consultation-Scheduler
 - 📊 **Advanced analytics dashboard** for admin
 - 🎥 **Telemedicine support** for online video consultations
 - 💊 **Integrated medical store** for ordering prescribed medicines
+=======
+# QuickConsult
+>>>>>>> b2d61bf8913d62e8fa58b41bef009ea86719e48b

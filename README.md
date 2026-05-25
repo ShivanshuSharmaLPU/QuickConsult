@@ -1,123 +1,137 @@
-<<<<<<< HEAD
-🏥 Smart Medical Consultation Scheduler
+# 🏥 QuickConsult — Smart Medical Consultation Scheduler
 
-A smart full-stack web application designed to manage medical consultations efficiently.
-The system connects patients and doctors through a seamless appointment booking platform with secure authentication, real-time availability, and role-based access control.
+> A smart full-stack web application designed to connect patients and doctors through a seamless appointment booking platform with secure authentication, real-time availability, and role-based access control.
 
-🔍 Overview
+---
 
-The Smart Medical Consultation Scheduler simplifies the process of scheduling doctor appointments.
+## 🔍 Overview
 
-The platform provides:
+**QuickConsult** simplifies the process of scheduling doctor appointments by providing:
 
-A user-friendly interface for patients to search doctors and book appointments
-A doctor dashboard to manage schedules and appointments
-An admin panel to manage doctors and users
-Secure authentication and authorization
-✨ Key Features
-👨‍⚕️ Doctor Management
-Admin can add, update, and remove doctor profiles
-Doctors can manage their availability and appointments
-📅 Smart Appointment Booking
-Patients can view available time slots
-Book appointments with doctors easily
-🔐 Role-Based Access
+- 🧑‍💻 A user-friendly interface for patients to search doctors and book appointments
+- 👨‍⚕️ A doctor dashboard to manage schedules and appointments
+- 🛠 An admin panel to manage doctors and users
+- 🔐 Secure authentication and authorization
 
-Different roles have different permissions:
+---
 
-Admin – manages doctors and users
-Doctor – manages availability and appointments
-Patient – books and manages consultations
+## ✨ Key Features
 
-🔑 Secure Authentication
-Secure login using JWT authentication
-Passwords are encrypted using Bcrypt with Salt
-💳 Payment Integration
-Online appointment payments using:
-Razorpay
+### 👨‍⚕️ Doctor Management
+- Admin can add, update, and remove doctor profiles
+- Doctors can manage their own availability and appointments
 
-📜 Consultation History
-Patients can view:
-Past consultations
-Upcoming appointments
-🛠 Tech Stack
-Frontend
-React.js
-Axios
-Tailwind CSS / Bootstrap
-Backend
-Node.js
-Express.js
-REST API
-Database
-MongoDB
-Mongoose
-Authentication
-JWT (JSON Web Token)
-Bcrypt (Password hashing)
-Payment Gateway
-Razorpay
+### 📅 Smart Appointment Booking
+- Patients can view available time slots
+- Book appointments with preferred doctors in seconds
 
-📂 Project Structure
+### 🔐 Role-Based Access Control
+
+| Role | Permissions |
+|------|-------------|
+| **Admin** | Manage doctors, users, and platform activity |
+| **Doctor** | Manage availability and view appointments |
+| **Patient** | Book, view, and manage consultations |
+
+### 🔑 Secure Authentication
+- JWT-based secure login
+- Passwords encrypted using **Bcrypt with Salt**
+
+### 💳 Payment Integration
+- Online appointment payments via **Razorpay**
+
+### 📜 Consultation History
+- View past consultations and upcoming appointments from a single dashboard
+
+---
+
+## 🛠 Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| **Frontend** | React.js, Axios, Tailwind CSS |
+| **Backend** | Node.js, Express.js, REST API |
+| **Database** | MongoDB, Mongoose |
+| **Authentication** | JWT, Bcrypt |
+| **Payment** | Razorpay |
+
+---
+
+## 📂 Project Structure
+
 ```
-Smart-Medical-Consultation-Scheduler
+QuickConsult/
 │
-├── client                     # Patient frontend (React)
-│   ├── components
-│   ├── pages
-│   ├── context
-│   └── services
+├── client/                     # Patient frontend (React)
+│   ├── components/
+│   ├── pages/
+│   ├── context/
+│   └── services/
 │
-├── admin                      # Admin dashboard
-│   ├── components
-│   ├── pages
-│   └── services
+├── admin/                      # Admin dashboard (React)
+│   ├── components/
+│   ├── pages/
+│   └── services/
 │
-├── server                     # Backend API
-│   ├── controllers
-│   ├── routes
-│   ├── models
-│   ├── middleware
-│   └── config
+├── server/                     # Backend API (Node.js)
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   ├── middleware/
+│   └── config/
 │
-└── database
+└── database/
     ├── users
     ├── doctors
     ├── appointments
     └── payments
 ```
+
+---
+
 ## 📌 Use Cases
 
 ### 👤 Patients
 - Search doctors by specialization
-- Book appointments
-- View consultation history
+- Book appointments with available slots
+- View full consultation history
 
 ### 👨‍⚕️ Doctors
 - Manage appointment schedules
-- View patient bookings
+- View and respond to patient bookings
 
 ### 🛠 Admin
-- Manage doctors
-- Manage users
-- Monitor platform activity
+- Add, edit, and remove doctors
+- Manage user accounts
+- Monitor overall platform activity
 
+---
 
 ## 🔒 Security
 
-- Passwords are hashed using **Bcrypt with Salt**
-- Authentication handled using **JWT tokens**
-- Protected routes ensure only authorized users access sensitive operations
+- 🔑 Passwords hashed using **Bcrypt with Salt**
+- 🛡 Authentication handled via **JWT tokens**
+- 🚧 Protected routes ensure only authorized users access sensitive operations
 
+---
 
 ## 🚀 Future Improvements
 
 - 🔔 Real-time notifications using **WebSockets**
-- 📧 Automated **Email/SMS reminders** for appointments
-- 🤖 **Machine Learning–based doctor recommendation system**
+- 📧 Automated **Email / SMS reminders** for appointments
+- 🤖 **ML-based doctor recommendation system**
 - 📊 **Advanced analytics dashboard** for admin
 - 🎥 **Telemedicine support** for online video consultations
 - 💊 **Integrated medical store** for ordering prescribed medicines
-=======
-# QuickConsult
->>>>>>> b2d61bf8913d62e8fa58b41bef009ea86719e48b
+
+---
+
+## 📄 License
+
+MIT License — free to use and modify.
+
+---
+
+## 👨‍💻 Author
+
+Made with ❤️ by **Shivanshu Sharma**
